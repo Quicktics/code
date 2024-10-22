@@ -1,7 +1,7 @@
 # Quicktics
 
 ## Overview
-Quicktics is a user-friendly blockchain data analysis platform that allows users to easily import, analyze, and visualize on-chain data without technical expertise. By leveraging the QuickNode API, users can build custom dashboards, analyze data in real-time, and store data using decentralized solutions like Avail. Quicktics is designed to make blockchain insights accessible to both technical and non-technical users, empowering everyone to explore and understand the Web3 ecosystem with ease.
+Quicktics is a user-friendly blockchain data analysis platform that allows users to `easily import`, `analyze`, and `visualize on-chain data without technical expertise`. By leveraging the QuickNode, Blockscout API, users can build custom dashboards, analyze data in real-time, and store data using decentralized solutions like Avail. Quicktics is designed to make blockchain insights accessible to both technical and non-technical users, empowering everyone to explore and understand the Web3 ecosystem with ease.
 
 ## Problems Quicktics Solves
 
