@@ -34,6 +34,26 @@ Quicktics is a user-friendly blockchain data analysis platform that allows users
 - **Cross-Platform Access**: Accessible via web, mobile app, and future integrations like Telegram mini-apps.
 
 ## How It Works (Sequence Diagram)
+```mermaid
+sequenceDiagram
+    participant User
+    participant Quicktics
+    participant QuickNode|Blockscout API
+    participant Avail
+
+    User->>Quicktics: Enters query or selects template
+    Quicktics->>QuickNode|Blockscout API: Sends request for on-chain data
+    QuickNode|Blockscout API-->>Quicktics: Returns relevant on-chain data
+    Quicktics->>Quicktics: Processes data (e.g., token transfers, wallet activity)
+    Quicktics->>User: Displays data in dashboard (graphs, charts, tables)
+    
+    alt Data storage needed
+        User->>Quicktics: Requests to store data
+        Quicktics->>Avail: Stores processed data
+        Avail-->>Quicktics: Confirms data storage
+        Quicktics-->>User: Confirms data storage in Avail
+    end
+```
 1. **User Input**: The user enters a query or selects a pre-built template in the Quicktics dashboard.
 2. **QuickNode API Interaction**: Quicktics connects to the QuickNode API to retrieve the relevant on-chain data.
 3. **Data Processing**: The data is processed based on the user’s query (e.g., token transfers, wallet activity).
