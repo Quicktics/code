@@ -1,7 +1,7 @@
 # Quicktics
 
 ## Overview
-Quicktics is a user-friendly blockchain data analysis platform that allows users to **`easily import`**, **`analyze`**, and **`visualize on-chain data without technical expertise`**. By leveraging the QuickNode, Blockscout API, users can build custom dashboards, analyze data in real-time, and store data using decentralized solutions like Avail. Quicktics is designed to make blockchain insights accessible to both technical and non-technical users, empowering everyone to explore and understand the Web3 ecosystem with ease.
+Quicktics is a user-friendly blockchain data analysis platform that allows users to **`easily import`**, **`analyze`**, and **`visualize on-chain data without technical expertise`**. By leveraging the **`QuickNode Funtions and Streams API`**, users can build custom dashboards, analyze data in real-time, and store data using decentralized solutions like Avail. Quicktics is designed to make blockchain insights accessible to both technical and non-technical users, empowering everyone to explore and understand the Web3 ecosystem with ease.
 
 ## Problems Quicktics Solves
 
@@ -22,15 +22,11 @@ Quicktics is a user-friendly blockchain data analysis platform that allows users
 2. **Customizable Dashboards**  
    Users can easily create personalized dashboards, selecting the data points and visualizations they need to monitor their Web3 activities in real time. This flexibility caters to both casual users and developers.
 
-3. **Decentralized Storage with Avail**  
-   By integrating Avail, Quicktics offers a decentralized, scalable solution for storing on-chain data. This ensures efficient data management and scalability for both users and the platform itself.
-
 ## Key Points
 
 - **No Coding Required**: Users can query blockchain data and create custom dashboards without needing SQL or other programming skills.
 - **Custom Visualizations**: Tailor data presentations with charts, graphs, and other visual formats.
-- **Real-Time and Historical Data**: Utilize QuickNode Streams to access real-time and historical on-chain data.
-- **Decentralized Storage**: Use Avail to store blockchain data securely and efficiently.
+- **Real-Time and Historical Data**: Utilize QuickNode Funtions and Streams to access real-time and historical on-chain data.
 - **Cross-Platform Access**: Accessible via web, mobile app, and future integrations like Telegram mini-apps.
 
 ## How It Works (Sequence Diagram)
@@ -38,12 +34,11 @@ Quicktics is a user-friendly blockchain data analysis platform that allows users
 sequenceDiagram
     participant User
     participant Quicktics
-    participant QuickNode|Blockscout API
-    participant Avail
+    participant QuickNode Functions and Streams API
 
     User->>Quicktics: Enters query or selects template
-    Quicktics->>QuickNode|Blockscout API: Sends request for on-chain data
-    QuickNode|Blockscout API-->>Quicktics: Returns relevant on-chain data
+    Quicktics->>QuickNode Functions and Streams API: Sends request for on-chain data
+    QuickNode Functions and Streams API-->>Quicktics: Returns relevant on-chain data
     Quicktics->>Quicktics: Processes data (e.g., token transfers, wallet activity)
     Quicktics->>User: Displays data in dashboard (graphs, charts, tables)
     
@@ -55,10 +50,10 @@ sequenceDiagram
     end
 ```
 1. **User Input**: The user enters a query or selects a pre-built template in the Quicktics dashboard.
-2. **QuickNode API Interaction**: Quicktics connects to the QuickNode API to retrieve the relevant on-chain data.
+2. **QuickNode API Interaction**: Quicktics connects to the QuickNode Functions and Streams API to retrieve the relevant on-chain data.
 3. **Data Processing**: The data is processed based on the user’s query (e.g., token transfers, wallet activity).
 4. **Visualization**: The data is displayed in the user’s custom dashboard with graphs, charts, or tables as specified.
-5. **Avail Storage (Optional)**: Users can store the analyzed data in Avail for future reference or sharing.
+5. **Avail Storage (Future)**: Users can store the analyzed data in Avail for future reference or sharing.
 
 ## User Journey
 
